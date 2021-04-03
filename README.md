@@ -35,3 +35,4 @@ Setup directions can be found on this thread: https://forums.civfanatics.com/thr
 - Siege collateral damage has a chance to miss each unit
 - Land units can beseige/blockage tiles around a city
 - Adjust land siege radius
+- Stack limit size
