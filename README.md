@@ -26,13 +26,13 @@ Setup directions can be found on this thread: https://forums.civfanatics.com/thr
 ## Current Custom Combat Features
 - Maximum combat round limit (Allows combat to be less lethal)
 - Global combat damage multiplier (makes results more consistent)
-
-## Future Custom Combat Goals
 - Remove metal requirement for metal-based units
-- Bonus damage rates to melee units for having access to copper/iron (e.g. +20% strength for copper and +40% for iron) 
+- Adjustable bonus damage promotion to melee units for having access to copper/iron (e.g. +20% strength for copper and +40% for iron) 
+  - If you change the damage bonuses mid-game, it will only affect newly built units
+## Future Custom Combat Goals
+- Stack limit size
 - Siege units ignore defender retaliation (boolean)
   - Exception for other siege units (boolean)
   - Siege collateral damage has a chance to miss each unit
 - Land units can beseige/blockage tiles around a city
   - Adjust land siege radius
-- Stack limit size
