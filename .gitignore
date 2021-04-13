@@ -21,3 +21,4 @@ temp_files/
 /.vs/civ4bull-sdk/v16/Browse.VC.db
 /.vs/civ4bull-sdk/v16/.suo
 /CvGameCoreDLL/.vs/CvGameCoreDLL/v16/ipch/AutoPCH/490f94ff8c5a4339
+/CvGameCoreDLL/CustomAssets/XML/units/CIV4UnitInfos.xml

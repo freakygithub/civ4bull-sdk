@@ -11305,6 +11305,12 @@ bool CvUnit::canAcquirePromotion(PromotionTypes ePromotion) const
 {
 	FAssertMsg(ePromotion >= 0, "ePromotion is expected to be non-negative (invalid Index)");
 	FAssertMsg(ePromotion < GC.getNumPromotionInfos(), "ePromotion is expected to be within maximum bounds (invalid Index)");
+	
+// Custom Combat - Metal Bonus - Start
+	if (hasPromotionDescription(ePromotion, L"Iron Bonus") || hasPromotionDescription(ePromotion, L"Copper Bonus")) {
+		return false;
+	}
+// Custom Combat - Metal Bonus - End
 
 	if (isHasPromotion(ePromotion))
 	{

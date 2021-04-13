@@ -27,6 +27,10 @@
 #include "CvDLLInterfaceIFaceBase.h"
 #include "CvEventReporter.h"
 
+// Custom Combat - Start
+#include "CvBugOptions.h"
+// Custom Combat - End
+
 // Public Functions...
 
 CvCity::CvCity()
@@ -2387,8 +2391,12 @@ void CvCity::addProductionExperience(CvUnit* pUnit, bool bConscript)
 
 	for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
 	{
-		if (isFreePromotion((PromotionTypes)iI))
+// Custom Combat - Metal Bonus - Start
+		int availableMetalBonus = getAndRefreshAvailableMetalCombatBonus((PromotionTypes)iI);
+
+		if (isFreePromotion((PromotionTypes)iI) || availableMetalBonus > 0)
 		{
+// Custom Combat - Metal Bonus - End
 			if ((pUnit->getUnitCombatType() != NO_UNITCOMBAT) && GC.getPromotionInfo((PromotionTypes)iI).getUnitCombat(pUnit->getUnitCombatType()))
 			{
 				pUnit->setHasPromotion(((PromotionTypes)iI), true);
@@ -2399,6 +2407,33 @@ void CvCity::addProductionExperience(CvUnit* pUnit, bool bConscript)
 	pUnit->testPromotionReady();
 }
 
+// Custom Combat - Metal bonuses - Start
+int CvCity::getAndRefreshAvailableMetalCombatBonus(PromotionTypes eIndex) const
+{
+	bool bCustomCombatEnabled = getBugOptionBOOL("CustomCombat__Enabled", true, "CUSTOM_COMBAT_ENABLED");
+	if (!bCustomCombatEnabled) {
+		return 0;
+	}
+
+	if (hasPromotionDescription(eIndex, L"Iron Bonus")) {
+		int iIronBonus = getBugOptionINT("CustomCombat__IronCombatBonus", true, "CUSTOM_COMBAT_IRON_COMBAT_BONUS");
+		GC.getPromotionInfo((PromotionTypes)eIndex).setCombatPercent(iIronBonus);
+		if (iIronBonus > 0 && hasBonus((BonusTypes)IRON)) {
+			return iIronBonus;
+		}
+	}
+
+	if (hasPromotionDescription(eIndex, L"Copper Bonus")) {
+		int iCopperBonus = getBugOptionINT("CustomCombat__CopperCombatBonus", true, "CUSTOM_COMBAT_COPPER_COMBAT_BONUS");
+		GC.getPromotionInfo((PromotionTypes)eIndex).setCombatPercent(iCopperBonus);
+		if (hasBonus((BonusTypes)COPPER)) {
+			return iCopperBonus;
+		}
+	}
+
+	return 0;
+}
+// Custom Combat - Metal bonuses - End
 
 UnitTypes CvCity::getProductionUnit() const
 {

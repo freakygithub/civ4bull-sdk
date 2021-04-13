@@ -53,5 +53,54 @@
     <German>How much damage non-air combat causes as a percentage.  200 = every hit causes double damage (more random results, bonus to first strikes).  50 = Every hit causes 1/2 damage (less random results, first strikes mean less)</German>
     <Italian>How much damage non-air combat causes as a percentage.  200 = every hit causes double damage (more random results, bonus to first strikes).  50 = Every hit causes 1/2 damage (less random results, first strikes mean less)</Italian>
     <Spanish>How much damage non-air combat causes as a percentage.  200 = every hit causes double damage (more random results, bonus to first strikes).  50 = Every hit causes 1/2 damage (less random results, first strikes mean less)</Spanish>
-  </TEXT>  
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUG_OPT_CUSTOMCOMBAT__NOMETALREQUIREMENTS_TEXT</Tag>
+    <English>No Metal Requirements</English>
+    <French>No Metal Requirements</French>
+    <German>No Metal Requirements</German>
+    <Italian>No Metal Requirements</Italian>
+    <Spanish>No Metal Requirements</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUG_OPT_CUSTOMCOMBAT__NOMETALREQUIREMENTS_HOVER</Tag>
+    <English>Remove the prerequisite of having copper or iron from building units</English>
+    <French>Remove the prerequisite of having copper or iron from building units</French>
+    <German>Remove the prerequisite of having copper or iron from building units</German>
+    <Italian>Remove the prerequisite of having copper or iron from building units</Italian>
+    <Spanish>Remove the prerequisite of having copper or iron from building units</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUG_OPT_CUSTOMCOMBAT__COPPERCOMBATBONUS_TEXT</Tag>
+    <English>Copper Combat Bonus (%)</English>
+    <French>Copper Combat Bonus (%)</French>
+    <German>Copper Combat Bonus (%)</German>
+    <Italian>Copper Combat Bonus (%)</Italian>
+    <Spanish>Copper Combat Bonus (%)</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUG_OPT_CUSTOMCOMBAT__COPPERCOMBATBONUS_HOVER</Tag>
+    <English>The combat bonus given to metal units with access to copper</English>
+    <French>The combat bonus given to metal units with access to copper</French>
+    <German>The combat bonus given to metal units with access to copper</German>
+    <Italian>The combat bonus given to metal units with access to copper</Italian>
+    <Spanish>The combat bonus given to metal units with access to copper</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUG_OPT_CUSTOMCOMBAT__IRONCOMBATBONUS_TEXT</Tag>
+    <English>Iron Combat Bonus (%)</English>
+    <French>Iron Combat Bonus (%)</French>
+    <German>Iron Combat Bonus (%)</German>
+    <Italian>Iron Combat Bonus (%)</Italian>
+    <Spanish>Iron Combat Bonus (%)</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUG_OPT_CUSTOMCOMBAT__IRONCOMBATBONUS_HOVER</Tag>
+    <English>The combat bonus given to metal units with access to iron (overrides copper bonus)</English>
+    <French>The combat bonus given to metal units with access to iron (overrides copper bonus)</French>
+    <German>The combat bonus given to metal units with access to iron (overrides copper bonus)</German>
+    <Italian>The combat bonus given to metal units with access to iron (overrides copper bonus)</Italian>
+    <Spanish>The combat bonus given to metal units with access to iron (overrides copper bonus)</Spanish>
+  </TEXT>
+  
 </Civ4GameText>

@@ -18,6 +18,12 @@
 					type="int" default="5" />
       <option id="DamageMultiplier" key="DamageMultiplier"
 					type="int" default="100" />
+      <option id="NoMetalRequirements" key="NoMetalRequirements"
+					type="boolean" default="False"/>
+      <option id="CopperCombatBonus" key="CopperCombatBonus"
+					type="int" default="15" />
+      <option id="IronCombatBonus" key="IronCombatBonus"
+					type="int" default="30" />
     </section>
 	</options>
   

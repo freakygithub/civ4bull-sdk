@@ -230,7 +230,9 @@ DllExport CvUnit* getUnit(IDInfo unit);	// Exposed to Python
 
 bool isBeforeUnitCycle(const CvUnit* pFirstUnit, const CvUnit* pSecondUnit);
 bool isPromotionValid(PromotionTypes ePromotion, UnitTypes eUnit, bool bLeader);	// Exposed to Python
-
+// Custom Combat - Metal Bonus - Start
+bool hasPromotionDescription(PromotionTypes ePromotionType, wchar* promotionDescription);
+// Custom Combat - Metal Bonus - End
 int getPopulationAsset(int iPopulation);								// Exposed to Python
 int getLandPlotsAsset(int iLandPlots);									// Exposed to Python
 int getPopulationPower(int iPopulation);								// Exposed to Python

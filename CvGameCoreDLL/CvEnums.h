@@ -901,6 +901,10 @@ enum FeatureTypes					// Exposed to Python
 enum BonusTypes						// Exposed to Python
 {
 	NO_BONUS = -1,
+// Custom Combat - Metal Bonus - Start
+	COPPER = 2,
+	IRON = 4
+// Custom Combat - Metal Bonus - End
 };
 
 enum BonusClassTypes			// Exposed to Python

@@ -228,6 +228,8 @@
   <ItemGroup>
     <None Include="CustomAssets\Python\BUG\CustomCombat.py" />
     <None Include="CustomAssets\XML\Text\CustomCombat_Civ4GameText.xml" />
+    <None Include="D:\SteamD\steamapps\common\Civ4\Beyond the Sword\Assets\XML\Units\CIV4PromotionInfos.xml" />
+    <None Include="D:\SteamD\steamapps\common\Civ4\Beyond the Sword\Assets\XML\Units\CIV4UnitInfos.xml" />
     <None Include="FVariableSystem.inl" />
     <None Include="interfaceDirtyBits.inl" />
   </ItemGroup>

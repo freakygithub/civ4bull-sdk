@@ -18,6 +18,10 @@
 #include "CvGameTextMgr.h"
 #include "CvGameCoreUtils.h"
 
+// Custom Combat - Start
+#include "CvBugOptions.h"
+// Custom Combat - End
+
 //------------------------------------------------------------------------------------------------------
 //
 //  FUNCTION:   CInfoBase()
@@ -1783,6 +1787,13 @@ int CvPromotionInfo::getCombatPercent() const
 	return m_iCombatPercent;
 }
 
+// Custom Combat - Metal Bonus - Start
+void CvPromotionInfo::setCombatPercent(int iCombatPercent)
+{
+	m_iCombatPercent = iCombatPercent;
+}
+// Custom Combat - Metal Bonus - End
+
 int CvPromotionInfo::getCityAttackPercent() const
 {
 	return m_iCityAttackPercent;
@@ -3522,7 +3533,21 @@ int CvUnitInfo::getPrereqAndTech() const
 
 int CvUnitInfo::getPrereqAndBonus() const			
 {
-	return m_iPrereqAndBonus;
+// Custom Combat - Metal Requirements - start	
+	int iRequiredBonus = m_iPrereqAndBonus;
+
+	bool bCustomCombatEnabled = getBugOptionBOOL("CustomCombat__Enabled", true, "CUSTOM_COMBAT_ENABLED");
+	if (bCustomCombatEnabled) {
+		bool bNoMetalRequirements = getBugOptionBOOL("CustomCombat__NoMetalRequirements", true, "CUSTOM_COMBAT_NO_METAL_REQUIREMENTS");
+		bool bBonusIsMetal = iRequiredBonus == COPPER || iRequiredBonus == IRON;
+
+		if (bBonusIsMetal && bNoMetalRequirements) {
+			return -1;
+		}
+	}
+
+	return iRequiredBonus;
+// Custom Combat - Metal Requirements - start	
 }
 
 int CvUnitInfo::getGroupSize() const// the initial number of individuals in the unit group
@@ -3819,7 +3844,21 @@ int CvUnitInfo::getPrereqOrBonuses(int i) const
 {
 	FAssertMsg(i < GC.getNUM_UNIT_PREREQ_OR_BONUSES(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_piPrereqOrBonuses ? m_piPrereqOrBonuses[i] : -1;
+// Custom Combat - Metal Requirements - start	
+	int iResult = m_piPrereqOrBonuses ? m_piPrereqOrBonuses[i] : -1;
+
+	bool bCustomCombatEnabled = getBugOptionBOOL("CustomCombat__Enabled", true, "CUSTOM_COMBAT_ENABLED");
+	if (bCustomCombatEnabled) {
+		bool bNoMetalRequirements = getBugOptionBOOL("CustomCombat__NoMetalRequirements", true, "CUSTOM_COMBAT_NO_METAL_REQUIREMENTS");
+		bool bBonusIsMetal = iResult == COPPER || iResult == IRON;
+
+		if (bBonusIsMetal && bNoMetalRequirements) {
+			return -1;
+		}
+	}
+	
+	return iResult;
+// Custom Combat - Metal Requirements - start	
 }
 
 int CvUnitInfo::getProductionTraits(int i) const			

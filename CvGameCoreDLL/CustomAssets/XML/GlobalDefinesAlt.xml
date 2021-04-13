@@ -533,7 +533,18 @@
   </Define>
   <Define>
     <DefineName>CUSTOM_COMBAT_DAMAGE_MULTIPLIER</DefineName>
-    <iDefineIntVal>150</iDefineIntVal>
+    <iDefineIntVal>100</iDefineIntVal>
 	</Define>
-
+  <Define>
+    <DefineName>CUSTOM_COMBAT_NO_METAL_REQUIREMENTS</DefineName>
+    <iDefineIntVal>1</iDefineIntVal>
+  </Define>
+  <Define>
+    <DefineName>CUSTOM_COMBAT_COPPER_COMBAT_BONUS</DefineName>
+    <iDefineIntVal>15</iDefineIntVal>
+  </Define>
+  <Define>
+    <DefineName>CUSTOM_COMBAT_IRON_COMBAT_BONUS</DefineName>
+    <iDefineIntVal>30</iDefineIntVal>
+  </Define>
 </Civ4Defines>

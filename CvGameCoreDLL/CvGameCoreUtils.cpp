@@ -341,6 +341,13 @@ bool isPromotionValid(PromotionTypes ePromotion, UnitTypes eUnit, bool bLeader)
 /** END                                                                                          */
 /*************************************************************************************************/
 
+// Custom Combat - Metal Bonus - Start
+bool hasPromotionDescription(PromotionTypes ePromotionType, wchar* promotionDescription) {
+
+	return (wcscmp(GC.getPromotionInfo(ePromotionType).getDescription(), promotionDescription) == 0);
+}
+// Custom Combat - Metal Bonus - Start
+
 int getPopulationAsset(int iPopulation)
 {
 	return (iPopulation * 2);
