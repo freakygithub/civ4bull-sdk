@@ -468,6 +468,9 @@ public:
 	int getSameTileHealChange() const;				// Exposed to Python
 	int getAdjacentTileHealChange() const;				// Exposed to Python
 	int getCombatPercent() const;				// Exposed to Python
+// Custom Combat - Metal Bonus - Start
+	void setCombatPercent(int iCombatPercent);
+// Custom Combat - Metal Bonus - End
 	int getCityAttackPercent() const;				// Exposed to Python
 	int getCityDefensePercent() const;				// Exposed to Python
 	int getHillsAttackPercent() const;				// Exposed to Python

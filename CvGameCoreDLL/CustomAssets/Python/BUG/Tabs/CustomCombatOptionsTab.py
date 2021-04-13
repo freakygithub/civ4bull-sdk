@@ -20,3 +20,6 @@ class CustomCombatOptionsTab(BugOptionsTab.BugOptionsTab):
 		columnL, columnR = self.addTwoColumnLayout(screen, column, "CustomCombat")
 		self.addTextEdit(screen, columnL, columnR, "CustomCombat__MaxCombatRounds")
 		self.addTextEdit(screen, columnL, columnR, "CustomCombat__DamageMultiplier")
+		self.addCheckbox(screen, column, "CustomCombat__NoMetalRequirements")
+		self.addTextEdit(screen, columnL, columnR, "CustomCombat__CopperCombatBonus")
+		self.addTextEdit(screen, columnL, columnR, "CustomCombat__IronCombatBonus")

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Game Text Infos -->
 <Civ4GameText xmlns="http://www.firaxis.com">
   <TEXT>
@@ -8,5 +8,21 @@
     <German>Changing %i1's damage from %i2 to %i3</German>
     <Italian>Changing i1's damage from %i2 to %i3</Italian>
     <Spanish>Changing %i1's damage from %i2 to %i3</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PROMOTION_COPPER</Tag>
+    <English>Copper Bonus</English>
+    <French>Copper Bonus</French>
+    <German>Copper Bonus</German>
+    <Italian>Copper Bonus</Italian>
+    <Spanish>Copper Bonus</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PROMOTION_IRON</Tag>
+    <English>Iron Bonus</English>
+    <French>Iron Bonus</French>
+    <German>Iron Bonus</German>
+    <Italian>Iron Bonus</Italian>
+    <Spanish>Iron Bonus</Spanish>
   </TEXT>
 </Civ4GameText>

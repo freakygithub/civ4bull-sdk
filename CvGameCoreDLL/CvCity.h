@@ -874,6 +874,9 @@ public:
 
 	int getFreePromotionCount(PromotionTypes eIndex) const;												// Exposed to Python
 	bool isFreePromotion(PromotionTypes eIndex) const;														// Exposed to Python
+// Custom Combat - Metal Bonus - Start
+	int getAndRefreshAvailableMetalCombatBonus(PromotionTypes eIndex) const;
+// Custom Combat - Metal Bonus - End
 	void changeFreePromotionCount(PromotionTypes eIndex, int iChange);
 
 	int getSpecialistFreeExperience() const;								// Exposed to Python
