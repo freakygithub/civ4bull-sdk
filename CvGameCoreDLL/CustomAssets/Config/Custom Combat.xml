@@ -24,6 +24,12 @@
 					type="int" default="15" />
       <option id="IronCombatBonus" key="IronCombatBonus"
 					type="int" default="30" />
+      <option id="UseMaxStackSize" key="UseMaxStackSize"
+					type="boolean" default="False"/>
+      <option id="MaxOpenStackSize" key="MaxOpenStackSize"
+					type="int" default="2" />
+      <option id="MaxCityStackSize" key="MaxCityStackSize"
+					type="int" default="5" />
     </section>
 	</options>
   

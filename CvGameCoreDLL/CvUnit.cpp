@@ -2666,6 +2666,25 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 			}
 		}
 	}
+// Custom Combat - Max Stack Size - Start
+	if (!bAttack) {
+		bool bCustomCombatEnabled = getBugOptionBOOL("CustomCombat__Enabled", true, "CUSTOM_COMBAT_ENABLED");
+		bool bUseMaxStackSize = getBugOptionBOOL("CustomCombat__UseMaxStackSize", true, "CUSTOM_COMBAT_USE_MAX_STACK_SIZE");
+		int iTargetPlotUnitCount = pPlot->getNumVisibleUnits(getOwner());
+		int iMaxStackSize;
+
+		if (pPlot->isCity()) {
+			iMaxStackSize = getBugOptionINT("CustomCombat__MaxCityStackSize", true, "CUSTOM_COMBAT_MAX_CITY_STACK_SIZE");
+		}
+		else {
+			iMaxStackSize = getBugOptionINT("CustomCombat__MaxOpenStackSize", true, "CUSTOM_COMBAT_MAX_OPEN_STACK_SIZE");
+		}
+
+		if (iTargetPlotUnitCount >= iMaxStackSize) {
+			return false;
+		}
+	}
+// Custom Combat - Max Stack Size - Start
 
 	if (GC.getUSE_UNIT_CANNOT_MOVE_INTO_CALLBACK())
 	{
