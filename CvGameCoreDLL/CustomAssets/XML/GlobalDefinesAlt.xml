@@ -547,4 +547,16 @@
     <DefineName>CUSTOM_COMBAT_IRON_COMBAT_BONUS</DefineName>
     <iDefineIntVal>30</iDefineIntVal>
   </Define>
+  <Define>
+    <DefineName>CUSTOM_COMBAT_USE_MAX_STACK_SIZE</DefineName>
+    <iDefineIntVal>1</iDefineIntVal>
+  </Define>
+  <Define>
+    <DefineName>CUSTOM_COMBAT_MAX_OPEN_STACK_SIZE</DefineName>
+    <iDefineIntVal>2</iDefineIntVal>
+  </Define>
+  <Define>
+    <DefineName>CUSTOM_COMBAT_MAX_CITY_STACK_SIZE</DefineName>
+    <iDefineIntVal>5</iDefineIntVal>
+  </Define>
 </Civ4Defines>

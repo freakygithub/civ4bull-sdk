@@ -102,5 +102,53 @@
     <Italian>The combat bonus given to metal units with access to iron (overrides copper bonus)</Italian>
     <Spanish>The combat bonus given to metal units with access to iron (overrides copper bonus)</Spanish>
   </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUG_OPT_CUSTOMCOMBAT__USEMAXSTACKSIZE_TEXT</Tag>
+    <English>Use Max Combat Size</English>
+    <French>Use Max Combat Size</French>
+    <German>Use Max Combat Size</German>
+    <Italian>Use Max Combat Size</Italian>
+    <Spanish>Use Max Combat Size</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUG_OPT_CUSTOMCOMBAT__USEMAXSTACKSIZE_HOVER</Tag>
+    <English>Check to use the open/city max stack sizes.  Uncheck for unlimited Stacks of Doom.</English>
+    <French>Check to use the open/city max stack sizes.  Uncheck for unlimited Stacks of Doom.</French>
+    <German>Check to use the open/city max stack sizes.  Uncheck for unlimited Stacks of Doom.</German>
+    <Italian>Check to use the open/city max stack sizes.  Uncheck for unlimited Stacks of Doom.</Italian>
+    <Spanish>Check to use the open/city max stack sizes.  Uncheck for unlimited Stacks of Doom.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUG_OPT_CUSTOMCOMBAT__MAXOPENSTACKSIZE_TEXT</Tag>
+    <English>Max Open Stack Size</English>
+    <French>Max Open Stack Size</French>
+    <German>Max Open Stack Size</German>
+    <Italian>Max Open Stack Size</Italian>
+    <Spanish>Max Open Stack Size</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUG_OPT_CUSTOMCOMBAT__MAXOPENSTACKSIZE_HOVER</Tag>
+    <English>Max number of units in a stack in a non-city space</English>
+    <French>Max number of units in a stack in a non-city space</French>
+    <German>Max number of units in a stack in a non-city space</German>
+    <Italian>Max number of units in a stack in a non-city space</Italian>
+    <Spanish>Max number of units in a stack in a non-city space</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUG_OPT_CUSTOMCOMBAT__MAXCITYSTACKSIZE_TEXT</Tag>
+    <English>Max City Stack Size</English>
+    <French>Max City Stack Size</French>
+    <German>Max City Stack Size</German>
+    <Italian>Max City Stack Size</Italian>
+    <Spanish>Max City Stack Size</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUG_OPT_CUSTOMCOMBAT__MAXCITYSTACKSIZE_HOVER</Tag>
+    <English>Max number of units in a stack in a city</English>
+    <French>Max number of units in a stack in a city</French>
+    <German>Max number of units in a stack in a city</German>
+    <Italian>Max number of units in a stack in a city</Italian>
+    <Spanish>Max number of units in a stack in a city</Spanish>
+  </TEXT>
   
 </Civ4GameText>
