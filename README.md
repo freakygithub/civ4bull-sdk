@@ -29,8 +29,8 @@ Setup directions can be found on this thread: https://forums.civfanatics.com/thr
 - Remove metal requirement for metal-based units
 - Adjustable bonus damage promotion to melee units for having access to copper/iron (e.g. +20% strength for copper and +40% for iron) 
   - If you change the damage bonuses mid-game, it will only affect newly built units
-## Future Custom Combat Goals
 - Stack limit size
+## Future Custom Combat Goals
 - Siege units ignore defender retaliation (boolean)
   - Exception for other siege units (boolean)
   - Siege collateral damage has a chance to miss each unit
